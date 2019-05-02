@@ -34926,3 +34926,90 @@ run
 force enable 0
 run
 run
+quit -sim
+# End time: 20:36:56 on May 02,2019, Elapsed time: 3:45:34
+# Errors: 1, Warnings: 1
+# reading /opt/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project simMovFull
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of movement_full-rtl.vhd failed with 5 errors.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of direction-rtl.vhd was successful.
+# 6 compiles, 1 failed with 5 errors.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of movement_full-rtl.vhd failed with 3 errors.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of direction-rtl.vhd was successful.
+# 6 compiles, 1 failed with 3 errors.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of direction-rtl.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t ps -gINIT='000100000'
+# No design specified
+vsim -t ps -gINIT='000100000' movement_full
+# vsim -t ps movement_full -gINIT='000100000' 
+# Start time: 20:42:49 on May 02,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.movement_full(rtl)
+# ** Warning: (vsim-3351) Invalid value "'000100000'" for generic "INIT".  Not using this value.
+#    Time: 0 ps  Iteration: 0  Instance: /movement_full File: /home/student/Desktop/TP78/vhdl/movement_full-rtl.vhd
+# ** Fatal: (vsim-3350) Generic "INIT" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /movement_full File: /home/student/Desktop/TP78/vhdl/movement_full-entity.vhd Line: 6
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 20:42:49 on May 02,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim -t ps -gINIT="000100000" movement_full
+# vsim -t ps movement_full -gINIT="000100000" 
+# Start time: 20:43:20 on May 02,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.movement_full(rtl)
+# Loading ieee.numeric_std(body)
+# Loading work.movement(rtl)
+# Loading work.direction(rtl)
+add wave *
+force ext_change 0 0, 1 523,0 563, repeat 1200
+# ** Error: (vsim-4026) Value "repeat" does not represent a literal of the enumeration type.
+# ** Error: (vsim-4011) Invalid force value: 0 0, 1 523,0 563, repeat 1200.
+# 
+force ext_change 0 0, 1 523,0 563 repeat 1200
+# Invalid time value: 563 repeat
+force ext_change 0 0, 1 523, 0 563 -repeat 1200
+force reset 1 0, 0 30
+force reset 1 0, 0 30
+force enable 0 0, 1 15, 0 25  -repeat 40
+force clock 1 0, 0 5 -repeat 10
+run 5000
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+restart -f
+vsim -t ps -gINIT="000100000" movement_full
+# End time: 20:55:44 on May 02,2019, Elapsed time: 0:12:24
+# Errors: 2, Warnings: 1
+# vsim -t ps movement_full -gINIT="000100000" 
+# Start time: 20:55:44 on May 02,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.movement_full(rtl)
+# Loading ieee.numeric_std(body)
+# Loading work.movement(rtl)
+# Loading work.direction(rtl)
+add wave *
+force reset 1 0, 0 30
+force enable 0 0, 1 15, 0 25  -repeat 40
+force clock 1 0, 0 5 -repeat 10
+force ext_change 0
+run 5000
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
