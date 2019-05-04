@@ -28,7 +28,7 @@ begin
     movementFullY : movment_full
     GENERIC MAP(
         WIDTH => WIDTH,
-        INIT  => '000100000'
+        INIT  => "000100000"
     )
     PORT MAP(
         ext_change => s_ext_change,
@@ -42,7 +42,7 @@ begin
     movementFullX : movment_full
     GENERIC MAP(
         WIDTH => 12,
-        INIT  => '000100000000'
+        INIT  => "000100000000"
     )
     PORT MAP(
         ext_change => s_ext_change,
