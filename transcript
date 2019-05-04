@@ -35013,3 +35013,371 @@ force clock 1 0, 0 5 -repeat 10
 force ext_change 0
 run 5000
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+end -sim
+# bad option "-sim": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+quit -sim
+# End time: 19:39:30 on May 03,2019, Elapsed time: 22:43:46
+# Errors: 1, Warnings: 1
+# reading /opt/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project scoreSim
+# Compile of score-entity.vhd was successful.
+# Compile of score-rtl.vhd failed with 134 errors.
+# 2 compiles, 1 failed with 134 errors.
+# Compile of score-entity.vhd was successful.
+# Compile of score-rtl.vhd failed with 97 errors.
+# 2 compiles, 1 failed with 97 errors.
+# Compile of score-entity.vhd was successful.
+# Compile of score-rtl.vhd failed with 73 errors.
+# 2 compiles, 1 failed with 73 errors.
+# Compile of score-entity.vhd was successful.
+# Compile of score-rtl.vhd failed with 5 errors.
+# 2 compiles, 1 failed with 5 errors.
+# Compile of score-entity.vhd was successful.
+# Compile of score-rtl.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -t ps score
+# vsim -t ps score 
+# Start time: 19:47:52 on May 03,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.score(rtl)
+add wave *
+force x_pos "000010000000"
+force enable 1
+force -freeze sim:/score/clock 1 0, 0 {50 ps} -r 100
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+run
+restart -f
+force x_pos "000010000000"
+force -freeze sim:/score/clock 1 0, 0 {50 ps} -r 100
+force enable 1
+force reset 1
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+run
+force reset 0
+run
+run
+force x_pos "100000000000"
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim -quit
+# ** Error: (vish-3296) Unknown option '-quit'.
+# Use the -help option for complete vsim usage.
+# Error loading design
+quit -sim
+# End time: 20:00:36 on May 03,2019, Elapsed time: 0:12:44
+# Errors: 3, Warnings: 2
+# reading /opt/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project makingSuredirSim
+# Window cannot be closed because the modal window "Add file to Project" is still open.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of direction-rtl.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+do movement.do
+# vsim -t ps movement -gINIT="000000001" 
+# Start time: 20:04:09 on May 03,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.movement(rtl)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of direction-rtl.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# Loading work.movement(rtl)
+do movement.do
+# End time: 20:07:36 on May 03,2019, Elapsed time: 0:03:27
+# Errors: 0, Warnings: 1
+# vsim -t ps movement -gINIT="000000001" 
+# Start time: 20:07:36 on May 03,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.movement(rtl)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of direction-rtl.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+do movement.do
+# End time: 20:10:25 on May 03,2019, Elapsed time: 0:02:49
+# Errors: 0, Warnings: 1
+# vsim -t ps movement -gINIT="000000001" 
+# Start time: 20:10:25 on May 03,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.movement(rtl)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of direction-rtl.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+do movement.do
+# End time: 20:11:39 on May 03,2019, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 1
+# vsim -t ps movement -gINIT="000000001" 
+# Start time: 20:11:39 on May 03,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.movement(rtl)
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+force enable 1
+run
+run
+run
+run
+quit -sim
+# End time: 23:01:24 on May 03,2019, Elapsed time: 2:49:45
+# Errors: 0, Warnings: 1
+# reading /opt/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project batSim
+# Compile of bat-entity.vhd was successful.
+# Compile of bat-rtl.vhd failed with 13 errors.
+# 2 compiles, 1 failed with 13 errors.
+# Compile of bat-entity.vhd was successful.
+# Compile of bat-rtl.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -t ps bat
+# vsim -t ps bat 
+# Start time: 23:02:57 on May 03,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.bat(rtl)
+add wave *
+force -freeze sim:/bat/clock 1 0, 0 {50 ps} -r 100
+force reset 1
+force enable 1
+force button_down 0
+force button_up 0
+force enable 0
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+force button_up 1
+force enable 1
+run
+run
+force reset 0
+run
+run
+run
+run
+run
+# Compile of bat-entity.vhd was successful.
+# Compile of bat-rtl.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+add wave *
+restart -f
+# Loading work.bat(rtl)
+force -freeze sim:/bat/clock 1 0, 0 {50 ps} -r 100
+force reset 1
+force enable 1
+force button_up 0
+force button_down 0
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+run
+force reset 0
+run
+run
+force button_up 1
+run
+run
+run
+force button_up 0
+force button_down 1
+run
+run
+run
+# Compile of bat-entity.vhd was successful.
+# Compile of bat-rtl.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+add wave *
+restart -f
+# Loading work.bat(rtl)
+add wave *
+restart -f
+force -freeze sim:/bat/clock 1 0, 0 {50 ps} -r 100
+force reset 0
+force reset 1
+force button_up 1
+force button_down 0
+force enable 1
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+force reset 0
+run
+run
+# Compile of bat-entity.vhd was successful.
+# Compile of bat-rtl.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# Loading work.bat(rtl)
+add wave *
+force -freeze sim:/bat/clock 1 0, 0 {50 ps} -r 100
+force reset 1
+force enable 1
+force button_down 0
+force button_up 1
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+force reset 0
+run
+run
+run
+run
+quit -sim
+# End time: 17:22:29 on May 04,2019, Elapsed time: 18:19:32
+# Errors: 0, Warnings: 4
+# reading /opt/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project simtest2pad
+# Compile of bat-entity.vhd was successful.
+# Compile of bat-rtl.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -t ps bat
+# vsim -t ps bat 
+# Start time: 17:23:23 on May 04,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.bat(rtl)
+add wave *
+force -freeze sim:/bat/clock 1 0, 0 {50 ps} -r 100
+force reset 1
+force enable 1
+force button_down 0
+force button_up 1
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+force reset 0
+run
+run
+run
+rn
+# invalid command name "rn"
+run
+force reset 0
+run
+run
+force reset 0
+run
+# Compile of bat-entity.vhd was successful.
+# Compile of bat-rtl.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+add wave *
+restart -f
+# Loading work.bat(rtl)
+force -freeze sim:/bat/clock 1 0, 0 {50 ps} -r 100
+force reset 1
+force enable 1
+force button_up 1
+force button_down 0
+force enable 1
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+force reset 0
+run
+run
+# Compile of bat-entity.vhd was successful.
+# Compile of bat-rtl.vhd failed with 8 errors.
+# 2 compiles, 1 failed with 8 errors.
+# Compile of bat-entity.vhd was successful.
+# Compile of bat-rtl.vhd failed with 13 errors.
+# 2 compiles, 1 failed with 13 errors.
+# Compile of bat-entity.vhd was successful.
+# Compile of bat-rtl.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+add wave *
+restart -f
+# Loading work.bat(rtl)
+force -freeze sim:/bat/clock 1 0, 0 {50 ps} -r 100
+force reset 1
+force enable 1
+force button_up 1
+force button_down 0
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+force reset 0
+run
+run
+run
+run
+run
+force button_down 1
+force button_up 0
+run
+run
+run
+run
+run
+run
+run
+force reset 1
+run
+run
+force burron_up 1
+# ** Error (suppressible): (vsim-4008) Object 'burron_up' not found.
+# 
+force button_up 1
+run
+run
+force button_down 0
+rnu
+# invalid command name "rnu"
+run
+run
+run
+force reset 0
+run
+run
+force button_down 1 
+run
+run
+run
+run
