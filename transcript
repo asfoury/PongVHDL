@@ -135,3 +135,50 @@ run
 run
 run
 run
+quit -sim
+# End time: 16:28:22 on May 05,2019, Elapsed time: 20:15:04
+# Errors: 0, Warnings: 3
+# reading /opt/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project testingBatAgain
+# Compile of bat-entity.vhd was successful.
+# Compile of bat-rtl.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -t ps bat
+# vsim -t ps bat 
+# Start time: 16:29:27 on May 05,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.bat(rtl)
+add wave *
+force -freeze sim:/bat/clock 1 0, 0 {50 ps} -r 100
+force reset 1
+force button_up 0
+force button_down 0
+force enable 0
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+force reset 0
+force button_up 1
+run
+run
+run
+run
+run
+force enable 1
+run
+run
+run
+run
+run
+force button_down 1
+force button_up 0
+run
+run
+run
+run
+run
+run
+run
