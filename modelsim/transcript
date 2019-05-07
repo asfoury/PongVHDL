@@ -1,0 +1,424 @@
+# Loading project clocktest3
+vsim -t ps clock_divider
+# vsim -t ps clock_divider 
+# Start time: 02:19:46 on May 07,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.clock_divider(no_target_specific)
+add wave *
+force reset 0
+force -freeze sim:/clock_divider/clock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/clock_divider/clock 1 0, 0 {50 ps} -r 100
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /clock_divider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /clock_divider
+run
+force reset 1
+run
+run
+run
+run
+restart -f
+force -freeze sim:/clock_divider/clock 1 0, 0 {50 ps} -r 100
+force reset 1
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /clock_divider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /clock_divider
+run
+force reset 0
+run
+restart -f
+force reset 0
+force -freeze sim:/clock_divider/clock 1 0, 0 {50 ps} -r 100
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /clock_divider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /clock_divider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 100 ps  Iteration: 1  Instance: /clock_divider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 100 ps  Iteration: 1  Instance: /clock_divider
+run
+force reset 1
+run 
+run
+run
+run
+force reset 0
+run
+run
+run
+run 799999
+# Compile of divider-entity.vhd was successful.
+# Compile of divider-behavior.vhd failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of divider-entity.vhd was successful.
+# Compile of divider-behavior.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -t ps clock_divider
+# End time: 02:32:27 on May 07,2019, Elapsed time: 0:12:41
+# Errors: 0, Warnings: 11
+# vsim -t ps clock_divider 
+# Start time: 02:32:27 on May 07,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.clock_divider(no_target_specific)
+add wave *
+force reset 0
+force -freeze sim:/clock_divider/clock 1 0, 0 {50 ps} -r 100
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /clock_divider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /clock_divider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 100 ps  Iteration: 1  Instance: /clock_divider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 100 ps  Iteration: 1  Instance: /clock_divider
+run
+force reset 1
+run
+run
+run
+force reset 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of divider-entity.vhd was successful.
+# Compile of divider-behavior.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+quit -sim
+# End time: 03:15:38 on May 07,2019, Elapsed time: 0:43:11
+# Errors: 0, Warnings: 5
+# reading /opt/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project pongDebugMovement
+# Compile of pong-entity.vhd was successful.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of divider-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of pong-rtl.vhd failed with 4 errors.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of divider-behavior.vhd was successful.
+# Compile of direction-rtl.vhd was successful.
+# 10 compiles, 1 failed with 4 errors.
+# Compile of pong-entity.vhd was successful.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of divider-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of pong-rtl.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of divider-behavior.vhd was successful.
+# Compile of direction-rtl.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -t ps ping
+# vsim -t ps ping 
+# Start time: 03:20:30 on May 07,2019
+# ** Error: (vsim-3170) Could not find 'ping'.
+#         Searched libraries:
+#             /home/student/Desktop/TP78/modelsim/work
+# Error loading design
+# End time: 03:20:31 on May 07,2019, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim -t ps pong
+# vsim -t ps pong 
+# Start time: 03:20:35 on May 07,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pong(rtl)
+# Loading work.movement_full(rtl)
+# Loading ieee.numeric_std(body)
+# Loading work.movement(rtl)
+# Loading work.direction(rtl)
+# Loading work.clock_divider(no_target_specific)
+add wave *
+force -freeze sim:/pong/clock 1 0, 0 {50 ps} -r 100
+force n_button_up 0
+force n_button_down 0
+force n_reset 1
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /pong/clockDivider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /pong/clockDivider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 100 ps  Iteration: 1  Instance: /pong/clockDivider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 100 ps  Iteration: 1  Instance: /pong/clockDivider
+run
+run
+force n_reset 0
+run
+run
+run
+force n_reset 1
+run
+restart -f
+add wave *
+force -freeze sim:/pong/clock 1 0, 0 {50 ps} -r 100
+force n_button_up 0
+force n_button_down 0
+force n_reset 0
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /pong/clockDivider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /pong/clockDivider
+run
+run
+run
+force n_reset 0
+force n_reset 1
+run
+run
+run
+run 
+run
+run 80000000
+run 80000000
+run 80000000
+run 80000000
+run 80000000
+# Compile of pong-entity.vhd was successful.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of divider-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of pong-rtl.vhd failed with 4 errors.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of divider-behavior.vhd was successful.
+# Compile of direction-rtl.vhd was successful.
+# 10 compiles, 1 failed with 4 errors.
+# Compile of pong-entity.vhd was successful.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of divider-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of pong-rtl.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of divider-behavior.vhd was successful.
+# Compile of direction-rtl.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -t ps pong
+# End time: 15:15:07 on May 07,2019, Elapsed time: 11:54:32
+# Errors: 0, Warnings: 8
+# vsim -t ps pong 
+# Start time: 15:15:07 on May 07,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pong(rtl)
+# Loading work.movement_full(rtl)
+# Loading ieee.numeric_std(body)
+# Loading work.movement(rtl)
+# Loading work.direction(rtl)
+# Loading work.clock_divider(no_target_specific)
+add wave *
+# Compile of pong-entity.vhd was successful.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of divider-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of pong-rtl.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of divider-behavior.vhd was successful.
+# Compile of direction-rtl.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of pong-entity.vhd was successful.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of divider-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of pong-rtl.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of divider-behavior.vhd was successful.
+# Compile of direction-rtl.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -t ps pong
+# End time: 15:47:30 on May 07,2019, Elapsed time: 0:32:23
+# Errors: 0, Warnings: 0
+# vsim -t ps pong 
+# Start time: 15:47:31 on May 07,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pong(rtl)
+# Loading work.movement_full(rtl)
+# Loading ieee.numeric_std(body)
+# Loading work.movement(rtl)
+# Loading work.direction(rtl)
+# Loading work.clock_divider(no_target_specific)
+add wave *
+force -freeze sim:/pong/clock 1 0, 0 {50 ps} -r 100
+force n_button_up 0
+force n_button_down 0
+force n_reset 0
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /pong/clockDivider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /pong/clockDivider
+run
+force n_reset 1
+run
+run 80000000
+run 80000000
+run 80000000
+run 80000000
+run 80000000
+run 80000000
+run 80000000
+run 80000000
+run 80000000
+# Compile of pong-entity.vhd was successful.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of divider-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of pong-rtl.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of divider-behavior.vhd was successful.
+# Compile of direction-rtl.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -t ps pong
+# End time: 15:53:48 on May 07,2019, Elapsed time: 0:06:17
+# Errors: 0, Warnings: 3
+# vsim -t ps pong 
+# Start time: 15:53:48 on May 07,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pong(rtl)
+# Loading work.movement_full(rtl)
+# Loading ieee.numeric_std(body)
+# Loading work.movement(rtl)
+# Loading work.direction(rtl)
+# Loading work.clock_divider(no_target_specific)
+add wave *
+force -freeze sim:/pong/clock 1 0, 0 {50 ps} -r 100
+force n_button_up 0
+force n_button_down 0
+force n_reset 0
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /pong/clockDivider
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /pong/clockDivider
+run
+run
+force n_reset 1
+run
+run
+run 80000000
+run 80000000
+run 80000000
+run 80000000
+run 80000000
+run 80000000
+# Compile of pong-entity.vhd was successful.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of divider-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of pong-rtl.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of divider-behavior.vhd was successful.
+# Compile of direction-rtl.vhd was successful.
+# Compile of score-entity.vhd was successful.
+# Compile of score-rtl.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+# Compile of pong-entity.vhd was successful.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of divider-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of pong-rtl.vhd failed with 3 errors.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of divider-behavior.vhd was successful.
+# Compile of direction-rtl.vhd was successful.
+# Compile of score-entity.vhd was successful.
+# Compile of score-rtl.vhd was successful.
+# 12 compiles, 1 failed with 3 errors.
+# Compile of pong-entity.vhd was successful.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of divider-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of pong-rtl.vhd failed with 2 errors.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of divider-behavior.vhd was successful.
+# Compile of direction-rtl.vhd was successful.
+# Compile of score-entity.vhd was successful.
+# Compile of score-rtl.vhd was successful.
+# 12 compiles, 1 failed with 2 errors.
+# Compile of pong-entity.vhd was successful.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of divider-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of pong-rtl.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of divider-behavior.vhd was successful.
+# Compile of direction-rtl.vhd was successful.
+# Compile of score-entity.vhd was successful.
+# Compile of score-rtl.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+# Compile of pong-entity.vhd was successful.
+# Compile of movement_full-entity.vhd was successful.
+# Compile of movement-entity.vhd was successful.
+# Compile of divider-entity.vhd was successful.
+# Compile of direction-entity.vhd was successful.
+# Compile of pong-rtl.vhd was successful.
+# Compile of movement_full-rtl.vhd was successful.
+# Compile of movement-rtl.vhd was successful with warnings.
+# Compile of divider-behavior.vhd was successful.
+# Compile of direction-rtl.vhd was successful.
+# Compile of score-entity.vhd was successful.
+# Compile of score-rtl.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+# End time: 18:21:28 on May 07,2019, Elapsed time: 2:27:40
+# Errors: 0, Warnings: 3

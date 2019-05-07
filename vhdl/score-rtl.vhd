@@ -116,8 +116,8 @@ CASE (s_cur_state_sys) IS
 END CASE;   
 END process transition_sys;
 
-user <= s_cur_state_user;
-sys <= s_cur_state_sys;
+user <= s_cur_state_sys ;
+sys <= s_cur_state_user;
 
 over <= '1' WHEN s_cur_state_sys = c_NINE or s_cur_state_user = c_NINE ELSE '0';
 

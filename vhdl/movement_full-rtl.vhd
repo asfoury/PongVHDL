@@ -1,7 +1,9 @@
 architecture rtl of movement_full is
 
     component movement is
-        port(dir    : in std_logic;
+        generic(WIDTH : natural := 9;
+        INIT  : std_logic_vector);
+    port(dir    : in std_logic;
      enable : in std_logic;
      reset  : in std_logic;
      clock  : in std_logic;
@@ -29,8 +31,9 @@ begin
 
     mov : movement
     GENERIC MAP(
-        WIDTH => WIDTH,
-        INIT => INIT
+        INIT => INIT,
+        WIDTH => WIDTH
+        
     )
     PORT MAP(
         enable => enable,
