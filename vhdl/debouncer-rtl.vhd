@@ -11,7 +11,7 @@ begin
 	BEGIN
 		IF (rising_edge(clock)) THEN
 			IF (reset = '1') THEN s_1<= '0';
-				ELSE s_1 <= not(button);
+				ELSE s_1 <= button;
 			END IF;
 		END IF;
 	END PROCESS dff1;

@@ -1,15 +1,19 @@
 |pong
-n_button_up => ~NO_FANOUT~
-n_button_down => ~NO_FANOUT~
+n_button_up => debouncer:decouncerButtonUp.button
+n_button_down => debouncer:decouncerButtonDown.button
 n_reset => movement_full:movementFullY.reset
 n_reset => movement_full:movementFullX.reset
 n_reset => score:gameScore.reset
 n_reset => bat:userBat.reset
+n_reset => debouncer:decouncerButtonUp.reset
+n_reset => debouncer:decouncerButtonDown.reset
 n_reset => clock_divider:clockDivider.reset
 clock => movement_full:movementFullY.clock
 clock => movement_full:movementFullX.clock
 clock => score:gameScore.clock
 clock => bat:userBat.clock
+clock => debouncer:decouncerButtonUp.clock
+clock => debouncer:decouncerButtonDown.clock
 clock => clock_divider:clockDivider.clock
 playfield[0] << playfield.DB_MAX_OUTPUT_PORT_TYPE
 playfield[1] << playfield.DB_MAX_OUTPUT_PORT_TYPE
@@ -339,6 +343,42 @@ sys[7] <= s_cur_state_user[7].DB_MAX_OUTPUT_PORT_TYPE
 over <= over.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|pong|collision:col
+x_dir => change.IN0
+y_dir => ~NO_FANOUT~
+x_pos[0] => ~NO_FANOUT~
+x_pos[1] => ~NO_FANOUT~
+x_pos[2] => ~NO_FANOUT~
+x_pos[3] => ~NO_FANOUT~
+x_pos[4] => ~NO_FANOUT~
+x_pos[5] => ~NO_FANOUT~
+x_pos[6] => ~NO_FANOUT~
+x_pos[7] => ~NO_FANOUT~
+x_pos[8] => ~NO_FANOUT~
+x_pos[9] => change.IN1
+x_pos[10] => ~NO_FANOUT~
+x_pos[11] => ~NO_FANOUT~
+y_pos[0] => s_colli.IN0
+y_pos[1] => s_colli.IN0
+y_pos[2] => s_colli.IN0
+y_pos[3] => s_colli.IN0
+y_pos[4] => s_colli.IN0
+y_pos[5] => s_colli.IN0
+y_pos[6] => s_colli.IN0
+y_pos[7] => s_colli.IN0
+y_pos[8] => s_colli.IN0
+bat_pos[0] => s_colli.IN1
+bat_pos[1] => s_colli.IN1
+bat_pos[2] => s_colli.IN1
+bat_pos[3] => s_colli.IN1
+bat_pos[4] => s_colli.IN1
+bat_pos[5] => s_colli.IN1
+bat_pos[6] => s_colli.IN1
+bat_pos[7] => s_colli.IN1
+bat_pos[8] => s_colli.IN1
+change <= change.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |pong|bat:userBat
 button_up => transition.IN0
 button_up => transition.IN0
@@ -375,6 +415,36 @@ bat_o[7] <= s_cur_state[7].DB_MAX_OUTPUT_PORT_TYPE
 bat_o[8] <= s_cur_state[8].DB_MAX_OUTPUT_PORT_TYPE
 
 
+|pong|debouncer:decouncerButtonUp
+button => s_1.DATAA
+enable => s_and2.IN0
+reset => s_1.OUTPUTSELECT
+reset => s_2.OUTPUTSELECT
+reset => s_3.OUTPUTSELECT
+reset => s_and2.IN1
+reset => s_button_o.OUTPUTSELECT
+clock => s_button_o.CLK
+clock => s_3.CLK
+clock => s_2.CLK
+clock => s_1.CLK
+button_o <= s_button_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pong|debouncer:decouncerButtonDown
+button => s_1.DATAA
+enable => s_and2.IN0
+reset => s_1.OUTPUTSELECT
+reset => s_2.OUTPUTSELECT
+reset => s_3.OUTPUTSELECT
+reset => s_and2.IN1
+reset => s_button_o.OUTPUTSELECT
+clock => s_button_o.CLK
+clock => s_3.CLK
+clock => s_2.CLK
+clock => s_1.CLK
+button_o <= s_button_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |pong|clock_divider:clockDivider
 clock => s_current_state[0].CLK
 clock => s_current_state[1].CLK
@@ -396,16 +466,6 @@ clock => s_current_state[16].CLK
 clock => s_current_state[17].CLK
 clock => s_current_state[18].CLK
 clock => s_current_state[19].CLK
-clock => s_current_state[20].CLK
-clock => s_current_state[21].CLK
-clock => s_current_state[22].CLK
-clock => s_current_state[23].CLK
-clock => s_current_state[24].CLK
-reset => s_current_state.OUTPUTSELECT
-reset => s_current_state.OUTPUTSELECT
-reset => s_current_state.OUTPUTSELECT
-reset => s_current_state.OUTPUTSELECT
-reset => s_current_state.OUTPUTSELECT
 reset => s_current_state.OUTPUTSELECT
 reset => s_current_state.OUTPUTSELECT
 reset => s_current_state.OUTPUTSELECT

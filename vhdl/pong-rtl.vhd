@@ -39,20 +39,43 @@ architecture rtl of pong is
      bat_o       : out std_logic_vector(8 downto 0));
      end component;
 
+    component debouncer is
+        port(button   : in std_logic;
+     enable   : in std_logic;
+     reset    : in std_logic;
+     clock    : in std_logic;
+     button_o : out std_logic);
+     end component;
+
+    component collision is 
+    port(x_dir   : in std_logic;
+     y_dir   : in std_logic;
+     x_pos   : in std_logic_vector(11 downto 0);
+     y_pos   : in std_logic_vector(8 downto 0);
+     bat_pos : in std_logic_vector(8 downto 0);
+     change  : out std_logic);
+     end component;
+
     SIGNAL s_enable: std_logic; 
     SIGNAL s_reset: std_logic;
-    SIGNAL s_ext_change: std_logic := '0';
+    SIGNAL s_ext_change_X: std_logic;
+    SIGNAL s_ext_change_Y: std_logic:='0';
+
     SIGNAL s_dir_X, s_dir_Y: std_logic;
     SIGNAL s_X_pos: std_logic_vector(11 downto 0);
     SIGNAL s_Y_pos: std_logic_vector(8 downto 0);
     SIGNAL s_over: std_logic;
     SIGNAL s_bat_Y_pos: std_logic_vector(8 downto 0);
-    SIGNAL s_button_up, s_button_down: std_logic := '0';
+    SIGNAL s_button_up, s_button_down: std_logic;
+    SIGNAL s_n_button_up, s_n_button_down: std_logic;
+
+    CONSTANT c_bat_pos_X:std_logic_vector(11 downto 0) := "010000000000";
 
 begin
 
 
     s_reset <= not(n_reset);
+  
 
     movementFullY : movement_full
     GENERIC MAP(
@@ -60,7 +83,7 @@ begin
         INIT  => "000100000"
     )
     PORT MAP(
-        ext_change => s_ext_change,
+        ext_change => s_ext_change_Y,
         enable => s_enable,
         reset => s_reset,
         clock => clock,
@@ -74,7 +97,7 @@ begin
         INIT  => "000100000000"
     )
     PORT MAP(
-        ext_change => s_ext_change,
+        ext_change => s_ext_change_X,
         enable => s_enable,
         reset =>s_reset,
         clock => clock,
@@ -95,6 +118,16 @@ begin
         over => s_over
     );
 
+    col: collision
+    PORT MAP(
+        x_pos => s_X_pos,
+        y_pos => s_Y_pos,
+        bat_pos => s_bat_Y_pos,
+        x_dir => s_dir_X,
+        y_dir => s_dir_Y,
+        change => s_ext_change_X
+);
+
     userBat : bat
     PORT MAP(
             enable => s_enable,
@@ -103,6 +136,24 @@ begin
             button_up => s_button_up,
             button_down => s_button_down,
             clock => clock
+    );
+
+    decouncerButtonUp : debouncer
+    PORT MAP(
+        button => n_button_up,
+        clock => clock,
+        enable => s_enable,
+        reset => s_reset,
+        button_o => s_button_up
+    );
+
+    decouncerButtonDown : debouncer
+    PORT MAP(
+        button => n_button_down,
+        clock => clock,
+        enable => s_enable,
+        reset => s_reset,
+        button_o => s_button_down   
     );
 
 
@@ -116,10 +167,11 @@ begin
         clock => clock,
         enable => s_enable
     );
+    
 
     display : FOR y IN 8 DOWNTO 0 GENERATE
         oneline : FOR x IN 11 DOWNTO 0 GENERATE
-            playfield(y*12+x) <= (s_Y_pos(y) AND s_X_pos(x)) OR s_bat_Y_pos(y);
+            playfield(y*12+x) <= (s_Y_pos(y) AND s_X_pos(x)) OR (s_bat_Y_pos(y) and c_bat_pos_X(x));
         END GENERATE oneline;
     END GENERATE display;
 
