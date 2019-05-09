@@ -11,7 +11,6 @@ architecture rtl of collision is
 
 
    s_colli <= '1' WHEN ((y_pos and bat_pos) /= c_zero) ELSE '0';     
-   change <= (x_pos(9) and x_dir and s_colli);
-
+   change <= (x_pos(9) and x_dir and s_colli) or (x_pos(11) and not(x_dir) and s_colli);
 end architecture rtl;
 

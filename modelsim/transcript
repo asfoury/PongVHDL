@@ -223,3 +223,5 @@ run 80000000
 # Compile of pong-rtl.vhd was successful.
 # Compile of score-rtl.vhd was successful.
 # 18 compiles, 0 failed with no errors.
+# End time: 16:38:04 on May 09,2019, Elapsed time: 14:46:01
+# Errors: 0, Warnings: 3

@@ -7,7 +7,7 @@ BEGIN
 dff : PROCESS (clock, reset)
 	BEGIN
 		IF (rising_edge(clock)) THEN
-			IF (reset = '1') THEN s_cur_state <= '0';
+			IF (reset = '1') THEN s_cur_state <= '1';
 				ELSE s_cur_state <= s_next_state;
 			END IF;
 		END IF;

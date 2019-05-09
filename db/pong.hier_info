@@ -340,10 +340,11 @@ sys[4] <= s_cur_state_user[4].DB_MAX_OUTPUT_PORT_TYPE
 sys[5] <= s_cur_state_user[5].DB_MAX_OUTPUT_PORT_TYPE
 sys[6] <= s_cur_state_user[6].DB_MAX_OUTPUT_PORT_TYPE
 sys[7] <= s_cur_state_user[7].DB_MAX_OUTPUT_PORT_TYPE
-over <= over.DB_MAX_OUTPUT_PORT_TYPE
+over <= s_over.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pong|collision:col
+x_dir => change.IN0
 x_dir => change.IN0
 y_dir => ~NO_FANOUT~
 x_pos[0] => ~NO_FANOUT~
@@ -357,7 +358,7 @@ x_pos[7] => ~NO_FANOUT~
 x_pos[8] => ~NO_FANOUT~
 x_pos[9] => change.IN1
 x_pos[10] => ~NO_FANOUT~
-x_pos[11] => ~NO_FANOUT~
+x_pos[11] => change.IN1
 y_pos[0] => s_colli.IN0
 y_pos[1] => s_colli.IN0
 y_pos[2] => s_colli.IN0

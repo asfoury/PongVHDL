@@ -1,5 +1,5 @@
 Flow report for pong
-Thu May  9 04:19:10 2019
+Thu May  9 17:26:48 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu May  9 04:19:10 2019       ;
+; Flow Status                        ; Successful - Thu May  9 17:26:48 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; pong                                        ;
 ; Top-level Entity Name              ; pong                                        ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE30F23C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 311 / 28,848 ( 1 % )                        ;
-;     Total combinational functions  ; 309 / 28,848 ( 1 % )                        ;
+; Total logic elements               ; 304 / 28,848 ( 1 % )                        ;
+;     Total combinational functions  ; 302 / 28,848 ( 1 % )                        ;
 ;     Dedicated logic registers      ; 74 / 28,848 ( < 1 % )                       ;
 ; Total registers                    ; 74                                          ;
 ; Total pins                         ; 128 / 329 ( 39 % )                          ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/09/2019 04:18:26 ;
+; Start date & time ; 05/09/2019 17:26:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pong                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 8796751098209.155736830625643          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 8796751098209.155741556408720          ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -96,12 +96,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 954 MB              ; 00:00:27                           ;
-; Fitter               ; 00:00:12     ; 1.0                     ; 1290 MB             ; 00:00:13                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 813 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 839 MB              ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1055 MB             ; 00:00:01                           ;
-; Total                ; 00:00:37     ; --                      ; --                  ; 00:00:46                           ;
+; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 953 MB              ; 00:00:27                           ;
+; Fitter               ; 00:00:14     ; 1.0                     ; 1290 MB             ; 00:00:14                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 812 MB              ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 843 MB              ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1054 MB             ; 00:00:01                           ;
+; Total                ; 00:00:39     ; --                      ; --                  ; 00:00:47                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Fitter report for pong
-Thu May  9 04:18:58 2019
+Thu May  9 17:26:37 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -38,9 +38,7 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  30. I/O Rules Matrix
  31. Fitter Device Options
  32. Operating Settings and Conditions
- 33. Estimated Delay Added for Hold Timing Summary
- 34. Estimated Delay Added for Hold Timing Details
- 35. Fitter Messages
+ 33. Fitter Messages
 
 
 
@@ -66,15 +64,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu May  9 04:18:58 2019       ;
+; Fitter Status                      ; Successful - Thu May  9 17:26:37 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; pong                                        ;
 ; Top-level Entity Name              ; pong                                        ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE30F23C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 311 / 28,848 ( 1 % )                        ;
-;     Total combinational functions  ; 309 / 28,848 ( 1 % )                        ;
+; Total logic elements               ; 304 / 28,848 ( 1 % )                        ;
+;     Total combinational functions  ; 302 / 28,848 ( 1 % )                        ;
 ;     Dedicated logic registers      ; 74 / 28,848 ( < 1 % )                       ;
 ; Total registers                    ; 74                                          ;
 ; Total pins                         ; 128 / 329 ( 39 % )                          ;
@@ -158,7 +156,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.5%      ;
+;     Processor 2            ;   1.3%      ;
 +----------------------------+-------------+
 
 
@@ -168,8 +166,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 648 ) ; 0.00 % ( 0 / 648 )         ; 0.00 % ( 0 / 648 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 648 ) ; 0.00 % ( 0 / 648 )         ; 0.00 % ( 0 / 648 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 641 ) ; 0.00 % ( 0 / 641 )         ; 0.00 % ( 0 / 641 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 641 ) ; 0.00 % ( 0 / 641 )         ; 0.00 % ( 0 / 641 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -192,7 +190,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 640 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 633 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 8 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -208,26 +206,26 @@ The pin-out file can be found in /home/student/Desktop/TP78/output_files/pong.pi
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 311 / 28,848 ( 1 % )  ;
-;     -- Combinational with no register       ; 237                   ;
+; Total logic elements                        ; 304 / 28,848 ( 1 % )  ;
+;     -- Combinational with no register       ; 230                   ;
 ;     -- Register only                        ; 2                     ;
 ;     -- Combinational with a register        ; 72                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 119                   ;
-;     -- 3 input functions                    ; 51                    ;
-;     -- <=2 input functions                  ; 139                   ;
+;     -- 4 input functions                    ; 104                   ;
+;     -- 3 input functions                    ; 66                    ;
+;     -- <=2 input functions                  ; 132                   ;
 ;     -- Register only                        ; 2                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 290                   ;
+;     -- normal mode                          ; 283                   ;
 ;     -- arithmetic mode                      ; 19                    ;
 ;                                             ;                       ;
 ; Total registers*                            ; 74 / 30,421 ( < 1 % ) ;
 ;     -- Dedicated logic registers            ; 74 / 28,848 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 1,573 ( 0 % )     ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 33 / 1,803 ( 2 % )    ;
+; Total LABs:  partially or completely used   ; 34 / 1,803 ( 2 % )    ;
 ; Virtual pins                                ; 0                     ;
 ; I/O pins                                    ; 128 / 329 ( 39 % )    ;
 ;     -- Clock pins                           ; 3 / 7 ( 43 % )        ;
@@ -245,12 +243,12 @@ The pin-out file can be found in /home/student/Desktop/TP78/output_files/pong.pi
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )         ;
-; Average interconnect usage (total/H/V)      ; 0.6% / 0.7% / 0.5%    ;
-; Peak interconnect usage (total/H/V)         ; 3.8% / 4.2% / 3.3%    ;
+; Average interconnect usage (total/H/V)      ; 0.6% / 0.8% / 0.5%    ;
+; Peak interconnect usage (total/H/V)         ; 4.2% / 4.1% / 4.4%    ;
 ; Maximum fan-out                             ; 74                    ;
 ; Highest non-global fan-out                  ; 51                    ;
-; Total fan-out                               ; 1371                  ;
-; Average fan-out                             ; 2.11                  ;
+; Total fan-out                               ; 1342                  ;
+; Average fan-out                             ; 2.09                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -263,26 +261,26 @@ The pin-out file can be found in /home/student/Desktop/TP78/output_files/pong.pi
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 311 / 28848 ( 1 % )  ; 0 / 28848 ( 0 % )              ;
-;     -- Combinational with no register       ; 237                  ; 0                              ;
+; Total logic elements                        ; 304 / 28848 ( 1 % )  ; 0 / 28848 ( 0 % )              ;
+;     -- Combinational with no register       ; 230                  ; 0                              ;
 ;     -- Register only                        ; 2                    ; 0                              ;
 ;     -- Combinational with a register        ; 72                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 119                  ; 0                              ;
-;     -- 3 input functions                    ; 51                   ; 0                              ;
-;     -- <=2 input functions                  ; 139                  ; 0                              ;
+;     -- 4 input functions                    ; 104                  ; 0                              ;
+;     -- 3 input functions                    ; 66                   ; 0                              ;
+;     -- <=2 input functions                  ; 132                  ; 0                              ;
 ;     -- Register only                        ; 2                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 290                  ; 0                              ;
+;     -- normal mode                          ; 283                  ; 0                              ;
 ;     -- arithmetic mode                      ; 19                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 74                   ; 0                              ;
 ;     -- Dedicated logic registers            ; 74 / 28848 ( < 1 % ) ; 0 / 28848 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 33 / 1803 ( 2 % )    ; 0 / 1803 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 34 / 1803 ( 2 % )    ; 0 / 1803 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 128                  ; 0                              ;
@@ -298,8 +296,8 @@ The pin-out file can be found in /home/student/Desktop/TP78/output_files/pong.pi
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 1367                 ; 4                              ;
-;     -- Registered Connections               ; 612                  ; 0                              ;
+;     -- Total Connections                    ; 1338                 ; 4                              ;
+;     -- Registered Connections               ; 600                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -1184,19 +1182,19 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node         ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                             ; Entity Name   ; Library Name ;
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------+---------------+--------------+
-; |pong                              ; 311 (109)   ; 74 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 128  ; 0            ; 237 (109)    ; 2 (0)             ; 72 (0)           ; |pong                                           ; pong          ; work         ;
+; |pong                              ; 304 (109)   ; 74 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 128  ; 0            ; 230 (109)    ; 2 (0)             ; 72 (0)           ; |pong                                           ; pong          ; work         ;
 ;    |bat:userBat|                   ; 26 (26)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 9 (9)            ; |pong|bat:userBat                               ; bat           ; work         ;
 ;    |clock_divider:clockDivider|    ; 29 (29)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 20 (20)          ; |pong|clock_divider:clockDivider                ; clock_divider ; work         ;
-;    |collision:col|                 ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |pong|collision:col                             ; collision     ; work         ;
+;    |collision:col|                 ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |pong|collision:col                             ; collision     ; work         ;
 ;    |debouncer:decouncerButtonDown| ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; |pong|debouncer:decouncerButtonDown             ; debouncer     ; work         ;
 ;    |debouncer:decouncerButtonUp|   ; 5 (5)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; |pong|debouncer:decouncerButtonUp               ; debouncer     ; work         ;
-;    |movement_full:movementFullX|   ; 39 (0)      ; 13 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 26 (0)       ; 0 (0)             ; 13 (0)           ; |pong|movement_full:movementFullX               ; movement_full ; work         ;
-;       |direction:dir|              ; 7 (7)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 1 (1)            ; |pong|movement_full:movementFullX|direction:dir ; direction     ; work         ;
+;    |movement_full:movementFullX|   ; 36 (0)      ; 13 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 23 (0)       ; 0 (0)             ; 13 (0)           ; |pong|movement_full:movementFullX               ; movement_full ; work         ;
+;       |direction:dir|              ; 4 (4)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (1)            ; |pong|movement_full:movementFullX|direction:dir ; direction     ; work         ;
 ;       |movement:mov|               ; 32 (32)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (20)      ; 0 (0)             ; 12 (12)          ; |pong|movement_full:movementFullX|movement:mov  ; movement      ; work         ;
 ;    |movement_full:movementFullY|   ; 25 (0)      ; 10 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (0)       ; 0 (0)             ; 10 (0)           ; |pong|movement_full:movementFullY               ; movement_full ; work         ;
 ;       |direction:dir|              ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |pong|movement_full:movementFullY|direction:dir ; direction     ; work         ;
 ;       |movement:mov|               ; 24 (24)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 9 (9)            ; |pong|movement_full:movementFullY|movement:mov  ; movement      ; work         ;
-;    |score:gameScore|               ; 73 (73)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 59 (59)      ; 2 (2)             ; 12 (12)          ; |pong|score:gameScore                           ; score         ; work         ;
+;    |score:gameScore|               ; 65 (65)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 51 (51)      ; 2 (2)             ; 12 (12)          ; |pong|score:gameScore                           ; score         ; work         ;
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1355,7 +1353,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                             ; Location          ; Fan-Out ; Usage                   ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------------+-------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
 ; clock                                            ; PIN_T22           ; 74      ; Clock                   ; yes    ; Global Clock         ; GCLK8            ; --                        ;
-; clock_divider:clockDivider|s_current_state[9]~56 ; LCCOMB_X42_Y39_N2 ; 20      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
+; clock_divider:clockDivider|s_current_state[9]~56 ; LCCOMB_X42_Y37_N4 ; 20      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
 ; n_reset                                          ; PIN_B11           ; 51      ; Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
 +--------------------------------------------------+-------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
 
@@ -1365,7 +1363,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name  ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clock ; PIN_T22  ; 74      ; 32                                   ; Global Clock         ; GCLK8            ; --                        ;
+; clock ; PIN_T22  ; 74      ; 24                                   ; Global Clock         ; GCLK8            ; --                        ;
 +-------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1374,81 +1372,81 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 412 / 116,715 ( < 1 % ) ;
-; C16 interconnects     ; 36 / 3,886 ( < 1 % )    ;
-; C4 interconnects      ; 261 / 73,752 ( < 1 % )  ;
-; Direct links          ; 81 / 116,715 ( < 1 % )  ;
+; Block interconnects   ; 439 / 116,715 ( < 1 % ) ;
+; C16 interconnects     ; 30 / 3,886 ( < 1 % )    ;
+; C4 interconnects      ; 286 / 73,752 ( < 1 % )  ;
+; Direct links          ; 90 / 116,715 ( < 1 % )  ;
 ; Global clocks         ; 1 / 20 ( 5 % )          ;
-; Local interconnects   ; 166 / 39,600 ( < 1 % )  ;
-; R24 interconnects     ; 75 / 3,777 ( 2 % )      ;
-; R4 interconnects      ; 437 / 99,858 ( < 1 % )  ;
+; Local interconnects   ; 152 / 39,600 ( < 1 % )  ;
+; R24 interconnects     ; 94 / 3,777 ( 2 % )      ;
+; R4 interconnects      ; 423 / 99,858 ( < 1 % )  ;
 +-----------------------+-------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 9.42) ; Number of LABs  (Total = 33) ;
+; Number of Logic Elements  (Average = 8.94) ; Number of LABs  (Total = 34) ;
 +--------------------------------------------+------------------------------+
-; 1                                          ; 5                            ;
-; 2                                          ; 6                            ;
-; 3                                          ; 0                            ;
-; 4                                          ; 2                            ;
-; 5                                          ; 0                            ;
+; 1                                          ; 6                            ;
+; 2                                          ; 4                            ;
+; 3                                          ; 1                            ;
+; 4                                          ; 1                            ;
+; 5                                          ; 2                            ;
 ; 6                                          ; 1                            ;
 ; 7                                          ; 1                            ;
-; 8                                          ; 0                            ;
+; 8                                          ; 1                            ;
 ; 9                                          ; 1                            ;
 ; 10                                         ; 0                            ;
-; 11                                         ; 0                            ;
+; 11                                         ; 1                            ;
 ; 12                                         ; 0                            ;
-; 13                                         ; 1                            ;
-; 14                                         ; 2                            ;
-; 15                                         ; 1                            ;
-; 16                                         ; 13                           ;
+; 13                                         ; 2                            ;
+; 14                                         ; 0                            ;
+; 15                                         ; 2                            ;
+; 16                                         ; 11                           ;
 +--------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.79) ; Number of LABs  (Total = 33) ;
+; LAB-wide Signals  (Average = 0.71) ; Number of LABs  (Total = 34) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 16                           ;
-; 1 Sync. clear                      ; 5                            ;
-; 1 Sync. load                       ; 5                            ;
+; 1 Clock                            ; 15                           ;
+; 1 Sync. clear                      ; 3                            ;
+; 1 Sync. load                       ; 6                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 11.67) ; Number of LABs  (Total = 33) ;
+; Number of Signals Sourced  (Average = 11.12) ; Number of LABs  (Total = 34) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 5                            ;
-; 2                                            ; 6                            ;
-; 3                                            ; 0                            ;
+; 1                                            ; 6                            ;
+; 2                                            ; 3                            ;
+; 3                                            ; 2                            ;
 ; 4                                            ; 1                            ;
-; 5                                            ; 1                            ;
+; 5                                            ; 2                            ;
 ; 6                                            ; 1                            ;
 ; 7                                            ; 1                            ;
 ; 8                                            ; 0                            ;
-; 9                                            ; 0                            ;
+; 9                                            ; 1                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 1                            ;
-; 15                                           ; 1                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 0                            ;
+; 15                                           ; 2                            ;
 ; 16                                           ; 2                            ;
-; 17                                           ; 3                            ;
-; 18                                           ; 1                            ;
-; 19                                           ; 2                            ;
-; 20                                           ; 2                            ;
-; 21                                           ; 2                            ;
-; 22                                           ; 2                            ;
-; 23                                           ; 0                            ;
+; 17                                           ; 0                            ;
+; 18                                           ; 2                            ;
+; 19                                           ; 1                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 3                            ;
+; 23                                           ; 1                            ;
 ; 24                                           ; 0                            ;
 ; 25                                           ; 0                            ;
 ; 26                                           ; 2                            ;
@@ -1458,53 +1456,56 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 5.97) ; Number of LABs  (Total = 33) ;
+; Number of Signals Sourced Out  (Average = 6.24) ; Number of LABs  (Total = 34) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 5                            ;
-; 2                                               ; 7                            ;
+; 1                                               ; 6                            ;
+; 2                                               ; 5                            ;
 ; 3                                               ; 1                            ;
 ; 4                                               ; 2                            ;
-; 5                                               ; 2                            ;
-; 6                                               ; 2                            ;
-; 7                                               ; 1                            ;
-; 8                                               ; 6                            ;
-; 9                                               ; 2                            ;
-; 10                                              ; 1                            ;
-; 11                                              ; 0                            ;
+; 5                                               ; 4                            ;
+; 6                                               ; 1                            ;
+; 7                                               ; 2                            ;
+; 8                                               ; 2                            ;
+; 9                                               ; 3                            ;
+; 10                                              ; 2                            ;
+; 11                                              ; 1                            ;
 ; 12                                              ; 0                            ;
-; 13                                              ; 0                            ;
+; 13                                              ; 2                            ;
 ; 14                                              ; 1                            ;
-; 15                                              ; 0                            ;
-; 16                                              ; 3                            ;
+; 15                                              ; 1                            ;
+; 16                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 7.67) ; Number of LABs  (Total = 33) ;
+; Number of Distinct Inputs  (Average = 8.29) ; Number of LABs  (Total = 34) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 0                            ;
-; 2                                           ; 5                            ;
-; 3                                           ; 6                            ;
-; 4                                           ; 0                            ;
-; 5                                           ; 1                            ;
-; 6                                           ; 1                            ;
-; 7                                           ; 3                            ;
-; 8                                           ; 1                            ;
-; 9                                           ; 6                            ;
-; 10                                          ; 5                            ;
-; 11                                          ; 0                            ;
-; 12                                          ; 0                            ;
+; 2                                           ; 4                            ;
+; 3                                           ; 5                            ;
+; 4                                           ; 1                            ;
+; 5                                           ; 2                            ;
+; 6                                           ; 3                            ;
+; 7                                           ; 4                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 3                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 2                            ;
+; 12                                          ; 4                            ;
 ; 13                                          ; 1                            ;
-; 14                                          ; 0                            ;
-; 15                                          ; 1                            ;
+; 14                                          ; 1                            ;
+; 15                                          ; 0                            ;
 ; 16                                          ; 1                            ;
 ; 17                                          ; 0                            ;
 ; 18                                          ; 1                            ;
 ; 19                                          ; 1                            ;
+; 20                                          ; 0                            ;
+; 21                                          ; 0                            ;
+; 22                                          ; 1                            ;
 +---------------------------------------------+------------------------------+
 
 
@@ -1736,25 +1737,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary              ;
-+-----------------+----------------------+-------------------+
-; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
-+-----------------+----------------------+-------------------+
-Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
-This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
-
-
-+---------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                               ;
-+------------------------------------+------------------------------------+-------------------+
-; Source Register                    ; Destination Register               ; Delay Added in ns ;
-+------------------------------------+------------------------------------+-------------------+
-; score:gameScore|s_cur_state_sys[4] ; score:gameScore|s_cur_state_sys[5] ; 0.061             ;
-+------------------------------------+------------------------------------+-------------------+
-Note: This table only shows the top 1 path(s) that have the largest delay added for hold.
-
-
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
@@ -1805,11 +1787,11 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 1290 megabytes
-    Info: Processing ended: Thu May  9 04:18:59 2019
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Processing ended: Thu May  9 17:26:37 2019
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:14
 
 
