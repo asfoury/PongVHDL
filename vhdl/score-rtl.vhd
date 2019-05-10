@@ -39,7 +39,7 @@ begin
     END PROCESS dff_sys;
     
 
-transition_user : process(s_cur_state_user, x_pos, enable)
+transition_user : process(s_cur_state_user, x_pos, enable,s_over)
 	BEGIN
 		CASE (s_cur_state_user) IS
 			WHEN c_ZERO => if x_pos(11)='1' and enable = '1' and s_over ='0' THEN s_next_state_user <= c_ONE; 
@@ -74,7 +74,7 @@ transition_user : process(s_cur_state_user, x_pos, enable)
 		END CASE;
 END process transition_user;
 
-transition_sys : process(s_cur_state_sys, x_pos, enable)
+transition_sys : process(s_cur_state_sys, x_pos, enable,s_over)
 BEGIN
 CASE (s_cur_state_sys) IS
     WHEN c_ZERO => if x_pos(0)='1' and enable = '1' and s_over ='0' THEN s_next_state_sys <= c_ONE; 

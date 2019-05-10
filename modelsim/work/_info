@@ -364,32 +364,32 @@ VIDDPEW1bE`UdzB2ZS]FJ62
 !s100 3@YJg]<01^=MPDG`eaCGa0
 R5
 32
-R6
+Z12 !s110 1557499076
 !i10b 1
-R7
+!s108 1557499075.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/student/Desktop/TP78/vhdl/score-entity.vhd|
 !s107 /home/student/Desktop/TP78/vhdl/score-entity.vhd|
 !i113 1
 R8
 R9
 Artl
-Z12 w1557243371
+w1557414817
 R1
 R2
 R3
 Z13 DEx4 work 5 score 0 22 IDDPEW1bE`UdzB2ZS]FJ62
 Z14 8/home/student/Desktop/TP78/vhdl/score-rtl.vhd
 Z15 F/home/student/Desktop/TP78/vhdl/score-rtl.vhd
-l20
+l21
 L1
-Z16 V8od^fiTC>0AUSajdK7KH30
-Z17 !s100 nPm<CZMI>eVKDo5MGNNz>3
+VKU^<ME>z05enk5S@6Yn=03
+!s100 ?FQQU0__EECIK]:li;d]a0
 R5
 32
-R10
+R12
 !i10b 1
-R11
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/student/Desktop/TP78/vhdl/score-rtl.vhd|
+!s108 1557499076.000000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/student/Desktop/TP78/vhdl/score-rtl.vhd|
 !s107 /home/student/Desktop/TP78/vhdl/score-rtl.vhd|
 !i113 1
 R8

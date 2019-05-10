@@ -1,227 +1,50 @@
-# Loading project pongDebugMovement
-# reading /opt/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
-# Loading project collisonTest
-# Compile of collision-entity.vhd was successful.
-# Compile of collision-rtl.vhd failed with 9 errors.
-# 2 compiles, 1 failed with 9 errors.
-# Compile of collision-entity.vhd was successful.
-# Compile of collision-rtl.vhd failed with 9 errors.
-# 2 compiles, 1 failed with 9 errors.
-# Compile of collision-entity.vhd was successful.
-# Compile of collision-rtl.vhd failed with 9 errors.
-# 2 compiles, 1 failed with 9 errors.
-# Compile of collision-entity.vhd was successful.
-# Compile of collision-rtl.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -t ps collison
-# vsim -t ps collison 
-# Start time: 16:56:01 on May 08,2019
-# ** Error: (vsim-3170) Could not find 'collison'.
-#         Searched libraries:
-#             /home/student/Desktop/TP78/modelsim/work
-# Error loading design
-# End time: 16:56:02 on May 08,2019, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vsim -t ps collision
-# vsim -t ps collision 
-# Start time: 16:56:18 on May 08,2019
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.collision(rtl)
-add wave *
-force x_dir 0
-force y_dir 0
-force x_pos 010000000000
-force y_pos 100000000
-force bat_pos 000111000
-run
-# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
-run
-force y_pos 000100000
-run
-run
-quit -sim
-# End time: 01:49:09 on May 09,2019, Elapsed time: 8:52:51
-# Errors: 0, Warnings: 1
-# reading /opt/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
 # Loading project colTest21
-# Compile of pong-entity.vhd was successful.
-# Compile of bat-entity.vhd was successful.
-# Compile of collision-entity.vhd was successful.
-# Compile of debouncer-entity.vhd was successful.
-# Compile of direction-entity.vhd was successful.
-# Compile of divider-entity.vhd was successful.
-# Compile of movement-entity.vhd was successful.
-# Compile of movement_full-entity.vhd was successful.
+quit -sim
+# reading /opt/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project scoreTestAfterRendu
 # Compile of score-entity.vhd was successful.
-# Compile of bat-rtl.vhd was successful.
-# Compile of collision-rtl.vhd was successful.
-# Compile of debouncer-rtl.vhd was successful.
-# Compile of direction-rtl.vhd was successful.
-# Compile of divider-behavior.vhd was successful.
-# Compile of movement-rtl.vhd was successful with warnings.
-# Compile of movement_full-rtl.vhd was successful.
-# Compile of pong-rtl.vhd was successful.
 # Compile of score-rtl.vhd was successful.
-# 18 compiles, 0 failed with no errors.
-vsim -t ps pong
-# vsim -t ps pong 
-# Start time: 01:52:03 on May 09,2019
+# 2 compiles, 0 failed with no errors.
+vsim -t ps score
+# vsim -t ps score 
+# Start time: 16:38:08 on May 10,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.pong(rtl)
-# Loading work.movement_full(rtl)
 # Loading ieee.numeric_std(body)
-# Loading work.movement(rtl)
-# Loading work.direction(rtl)
 # Loading work.score(rtl)
-# Loading work.collision(rtl)
-# Loading work.bat(rtl)
-# Loading work.debouncer(rtl)
-# Loading work.clock_divider(no_target_specific)
 add wave *
-force -freeze sim:/pong/clock 1 0, 0 {50 ps} -r 100
-force n_reset 0
-force n_button_up 1
-force n_button_down 1
+force reset 1
+force -freeze sim:/score/clock 1 0, 0 {50 ps} -r 100
 run
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /pong/clockDivider
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /pong/clockDivider
 run
 run
-force n_reset 0
+force x_pos "100000000000"
+run
+force enable 1
+run
+force x_pos "010000000000"
+run
+run
+force reset 0
+force x_pos "100000000000"
 run
 run
 run
-run 80000000
-run 80000000
-force n_reset 1
-run 80000000
-run 80000000
-run 80000000
-run 80000000
-run 80000000
-run 80000000
-run 80000000
-run 80000000
-# Compile of pong-entity.vhd was successful.
-# Compile of bat-entity.vhd was successful.
-# Compile of collision-entity.vhd was successful.
-# Compile of debouncer-entity.vhd was successful.
-# Compile of direction-entity.vhd was successful.
-# Compile of divider-entity.vhd was successful.
-# Compile of movement-entity.vhd was successful.
-# Compile of movement_full-entity.vhd was successful.
-# Compile of score-entity.vhd was successful.
-# Compile of bat-rtl.vhd was successful.
-# Compile of collision-rtl.vhd failed with 3 errors.
-# Compile of debouncer-rtl.vhd was successful.
-# Compile of direction-rtl.vhd was successful.
-# Compile of divider-behavior.vhd was successful.
-# Compile of movement-rtl.vhd was successful with warnings.
-# Compile of movement_full-rtl.vhd was successful.
-# Compile of pong-rtl.vhd was successful.
-# Compile of score-rtl.vhd was successful.
-# 18 compiles, 1 failed with 3 errors.
-# Compile of pong-entity.vhd was successful.
-# Compile of bat-entity.vhd was successful.
-# Compile of collision-entity.vhd was successful.
-# Compile of debouncer-entity.vhd was successful.
-# Compile of direction-entity.vhd was successful.
-# Compile of divider-entity.vhd was successful.
-# Compile of movement-entity.vhd was successful.
-# Compile of movement_full-entity.vhd was successful.
-# Compile of score-entity.vhd was successful.
-# Compile of bat-rtl.vhd was successful.
-# Compile of collision-rtl.vhd was successful.
-# Compile of debouncer-rtl.vhd was successful.
-# Compile of direction-rtl.vhd was successful.
-# Compile of divider-behavior.vhd was successful.
-# Compile of movement-rtl.vhd was successful with warnings.
-# Compile of movement_full-rtl.vhd was successful.
-# Compile of pong-rtl.vhd was successful.
-# Compile of score-rtl.vhd was successful.
-# 18 compiles, 0 failed with no errors.
-# Compile of pong-entity.vhd was successful.
-# Compile of bat-entity.vhd was successful.
-# Compile of collision-entity.vhd was successful.
-# Compile of debouncer-entity.vhd was successful.
-# Compile of direction-entity.vhd was successful.
-# Compile of divider-entity.vhd was successful.
-# Compile of movement-entity.vhd was successful.
-# Compile of movement_full-entity.vhd was successful.
-# Compile of score-entity.vhd was successful.
-# Compile of bat-rtl.vhd was successful.
-# Compile of collision-rtl.vhd was successful.
-# Compile of debouncer-rtl.vhd was successful.
-# Compile of direction-rtl.vhd was successful.
-# Compile of divider-behavior.vhd was successful.
-# Compile of movement-rtl.vhd was successful with warnings.
-# Compile of movement_full-rtl.vhd was successful.
-# Compile of pong-rtl.vhd was successful.
-# Compile of score-rtl.vhd was successful.
-# 18 compiles, 0 failed with no errors.
-# Compile of pong-entity.vhd was successful.
-# Compile of bat-entity.vhd was successful.
-# Compile of collision-entity.vhd was successful.
-# Compile of debouncer-entity.vhd was successful.
-# Compile of direction-entity.vhd was successful.
-# Compile of divider-entity.vhd was successful.
-# Compile of movement-entity.vhd was successful.
-# Compile of movement_full-entity.vhd was successful.
-# Compile of score-entity.vhd was successful.
-# Compile of bat-rtl.vhd was successful.
-# Compile of collision-rtl.vhd was successful.
-# Compile of debouncer-rtl.vhd was successful.
-# Compile of direction-rtl.vhd was successful.
-# Compile of divider-behavior.vhd was successful.
-# Compile of movement-rtl.vhd was successful with warnings.
-# Compile of movement_full-rtl.vhd was successful.
-# Compile of pong-rtl.vhd was successful.
-# Compile of score-rtl.vhd was successful.
-# 18 compiles, 0 failed with no errors.
-# Compile of pong-entity.vhd was successful.
-# Compile of bat-entity.vhd was successful.
-# Compile of collision-entity.vhd was successful.
-# Compile of debouncer-entity.vhd was successful.
-# Compile of direction-entity.vhd was successful.
-# Compile of divider-entity.vhd was successful.
-# Compile of movement-entity.vhd was successful.
-# Compile of movement_full-entity.vhd was successful.
-# Compile of score-entity.vhd was successful.
-# Compile of bat-rtl.vhd was successful.
-# Compile of collision-rtl.vhd was successful.
-# Compile of debouncer-rtl.vhd was successful.
-# Compile of direction-rtl.vhd was successful.
-# Compile of divider-behavior.vhd was successful.
-# Compile of movement-rtl.vhd was successful with warnings.
-# Compile of movement_full-rtl.vhd was successful.
-# Compile of pong-rtl.vhd was successful.
-# Compile of score-rtl.vhd was successful.
-# 18 compiles, 0 failed with no errors.
-# Compile of pong-entity.vhd was successful.
-# Compile of bat-entity.vhd was successful.
-# Compile of collision-entity.vhd was successful.
-# Compile of debouncer-entity.vhd was successful.
-# Compile of direction-entity.vhd was successful.
-# Compile of divider-entity.vhd was successful.
-# Compile of movement-entity.vhd was successful.
-# Compile of movement_full-entity.vhd was successful.
-# Compile of score-entity.vhd was successful.
-# Compile of bat-rtl.vhd was successful.
-# Compile of collision-rtl.vhd was successful.
-# Compile of debouncer-rtl.vhd was successful.
-# Compile of direction-rtl.vhd was successful.
-# Compile of divider-behavior.vhd was successful.
-# Compile of movement-rtl.vhd was successful with warnings.
-# Compile of movement_full-rtl.vhd was successful.
-# Compile of pong-rtl.vhd was successful.
-# Compile of score-rtl.vhd was successful.
-# 18 compiles, 0 failed with no errors.
-# End time: 16:38:04 on May 09,2019, Elapsed time: 14:46:01
-# Errors: 0, Warnings: 3
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force x_pos "000000000001"
+run
+run
+run
+run
+run
